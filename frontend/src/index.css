@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    font-family: 'Inter', 'Tiro Devanagari Hindi', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@layer base {
+    :root {
+        --background: 39 26 9;
+        --foreground: 253 251 247;
+        --card: 253 251 247;
+        --card-foreground: 45 27 14;
+        --popover: 253 251 247;
+        --popover-foreground: 45 27 14;
+        --primary: 185 28 28;
+        --primary-foreground: 253 251 247;
+        --secondary: 217 119 6;
+        --secondary-foreground: 253 251 247;
+        --muted: 243 244 246;
+        --muted-foreground: 107 114 128;
+        --accent: 245 158 11;
+        --accent-foreground: 45 27 14;
+        --destructive: 239 68 68;
+        --destructive-foreground: 253 251 247;
+        --border: 229 231 235;
+        --input: 229 231 235;
+        --ring: 185 28 28;
+        --radius: 0.5rem;
+    }
+    
+    .dark {
+        --background: 2 6 23;
+        --foreground: 248 250 252;
+        --card: 30 41 59;
+        --card-foreground: 248 250 252;
+        --popover: 30 41 59;
+        --popover-foreground: 248 250 252;
+        --primary: 252 211 77;
+        --primary-foreground: 2 6 23;
+        --secondary: 168 85 247;
+        --secondary-foreground: 248 250 252;
+        --muted: 30 41 59;
+        --muted-foreground: 148 163 184;
+        --accent: 99 102 241;
+        --accent-foreground: 248 250 252;
+        --destructive: 220 38 38;
+        --destructive-foreground: 248 250 252;
+        --border: 51 65 85;
+        --input: 51 65 85;
+        --ring: 252 211 77;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+.font-cinzel {
+    font-family: 'Cinzel', serif;
+}
+
+.font-hindi {
+    font-family: 'Tiro Devanagari Hindi', serif;
+}
+
+@keyframes spin-slow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin-slow {
+    animation: spin-slow 20s linear infinite;
+}
+
+.glass-effect {
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.dark .glass-effect {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+
+    [data-debug-wrapper="true"] > * {
+        margin-left: inherit;
+        margin-right: inherit;
+        margin-top: inherit;
+        margin-bottom: inherit;
+        padding-left: inherit;
+        padding-right: inherit;
+        padding-top: inherit;
+        padding-bottom: inherit;
+        column-gap: inherit;
+        row-gap: inherit;
+        gap: inherit;
+        border-left-width: inherit;
+        border-right-width: inherit;
+        border-top-width: inherit;
+        border-bottom-width: inherit;
+        border-left-style: inherit;
+        border-right-style: inherit;
+        border-top-style: inherit;
+        border-bottom-style: inherit;
+        border-left-color: inherit;
+        border-right-color: inherit;
+        border-top-color: inherit;
+        border-bottom-color: inherit;
+    }
+}

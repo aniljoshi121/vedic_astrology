@@ -1,0 +1,113 @@
+{
+  "identity": {
+    "name": "E1: The Vedic Architect",
+    "mission": "To merge ancient Vedic wisdom with hyper-modern digital aesthetics. We do not build 'religious' sites; we build 'cosmic interfaces'.",
+    "principles": [
+      "Fusion over Imitation: Mix Vedic geometry (Yantras) with Swiss Grid precision.",
+      "Emotion First: Every interaction should feel like a ritual.",
+      "Content is King: The prediction is the hero; the UI is the vessel.",
+      "Zoom In: Focus on the planetary details (degrees, nakshatras).",
+      "Negative Space: Let the charts breathe."
+    ]
+  },
+  "typography": {
+    "primary_font": "Cinzel, serif",
+    "secondary_font": "Inter, sans-serif",
+    "hindi_font": "Tiro Devanagari Hindi, serif",
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-bold tracking-tight",
+      "h2": "text-4xl md:text-5xl font-semibold tracking-tight",
+      "h3": "text-2xl md:text-3xl font-medium",
+      "body": "text-base md:text-lg leading-relaxed",
+      "caption": "text-sm tracking-widest uppercase"
+    },
+    "instructions": "Use Cinzel for all major headings to evoke authority and timelessness. Use Inter for data-heavy tables and charts for readability. Use Tiro Devanagari Hindi for all Hindi text."
+  },
+  "colors": {
+    "palette": {
+      "light": {
+        "background": "#FDFBF7",
+        "foreground": "#2D1B0E",
+        "primary": "#B91C1C",
+        "secondary": "#D97706",
+        "accent": "#F59E0B",
+        "muted": "#F3F4F6",
+        "border": "#E5E7EB"
+      },
+      "dark": {
+        "background": "#020617",
+        "foreground": "#F8FAFC",
+        "primary": "#FCD34D",
+        "secondary": "#A855F7",
+        "accent": "#6366F1",
+        "muted": "#1E293B",
+        "border": "#334155"
+      }
+    },
+    "gradients": {
+      "mystic_gold": "linear-gradient(135deg, #FCD34D 0%, #D97706 100%)",
+      "cosmic_night": "linear-gradient(to bottom, #020617, #1E1B4B)",
+      "paper_texture": "url('https://images.unsplash.com/photo-1737276745714-72fe9d14b427?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTF8MHwxfHNlYXJjaHwxfHx2aW50YWdlJTIwcGFwZXIlMjB0ZXh0dXJlJTIwcGFyY2htZW50fGVufDB8fHx8MTc2OTM1NzU4NHww&ixlib=rb-4.1.0&q=85')"
+    },
+    "usage": "Light mode simulates 'Parchment & Ink' (Authentic/Print). Dark mode simulates 'Deep Cosmos' (Modern/App). Use Gold (#FCD34D) sparingly as a highlighter for auspicious data."
+  },
+  "layout": {
+    "grid_system": "Bento Grid",
+    "spacing": "Generous. Use p-8 to p-12 for section containers.",
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "modes": {
+      "landing": "Tetris Grid: Asymmetrical layout for features.",
+      "dashboard": "High Density Grid: Tight packing for charts and planetary positions."
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg rounded-full px-8 py-3 font-cinzel tracking-wider transition-all duration-300 hover:scale-105",
+      "secondary": "border-2 border-primary text-primary hover:bg-primary/10 rounded-full px-8 py-3 font-cinzel tracking-wider transition-all duration-300"
+    },
+    "cards": {
+      "style": "backdrop-blur-md bg-card/50 border border-border/50 shadow-xl rounded-xl overflow-hidden",
+      "hover": "hover:border-primary/50 hover:shadow-2xl transition-all duration-300"
+    },
+    "inputs": {
+      "style": "bg-background/50 border-border focus:border-primary focus:ring-primary rounded-lg"
+    },
+    "charts": {
+      "north_indian": "Diamond-shaped SVG layout. Use gold strokes on dark mode, maroon strokes on light mode.",
+      "planetary_table": "Clean rows with alternating background colors. Highlight 'Exalted' planets in Green, 'Debilitated' in Red."
+    }
+  },
+  "visual_enhancers": {
+    "textures": {
+      "noise": "opacity-5 pointer-events-none fixed inset-0 z-50 mix-blend-overlay",
+      "mandala": "absolute opacity-10 spin-slow"
+    },
+    "icons": "Phosphor Icons (Duotone) or Lucide React. Use 'Star', 'Moon', 'Sun', 'Compass' heavily.",
+    "animations": {
+      "fade_in": "animate-in fade-in duration-700",
+      "slide_up": "animate-in slide-in-from-bottom-8 duration-700",
+      "spin_slow": "animate-spin-slow"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_bg": "https://images.unsplash.com/photo-1554842309-fef0d204097e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwxfHxteXN0aWNhbCUyMHN0YXJyeSUyMG5pZ2h0JTIwc2t5JTIwZGVlcCUyMGJsdWUlMjBwdXJwbGV8ZW58MHx8fHwxNzY5MzU3NTgxfDA&ixlib=rb-4.1.0&q=85",
+      "mandala_overlay": "https://images.unsplash.com/photo-1755541608519-3746dbfb11d6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTZ8MHwxfHNlYXJjaHwxfHxnb2xkZW4lMjBtYW5kYWxhJTIwcGF0dGVybiUyMGRhcmslMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc2OTM1NzU3OXww&ixlib=rb-4.1.0&q=85",
+      "paper_texture": "https://images.unsplash.com/photo-1737276745714-72fe9d14b427?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTF8MHwxfHNlYXJjaHwxfHx2aW50YWdlJTIwcGFwZXIlMjB0ZXh0dXJlJTIwcGFyY2htZW50fGVufDB8fHx8MTc2OTM1NzU4NHww&ixlib=rb-4.1.0&q=85"
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. THEME SETUP: Implement a 'Theme Toggle' that switches between 'Cosmic Mode' (Dark) and 'Parchment Mode' (Light). Default to Light for the 'Janampatri' view (for printing).",
+    "2. CHART RENDERING: The North Indian Chart is a square divided into triangles. Do NOT use a standard pie chart. Build a custom SVG component for this.",
+    "3. FORM DESIGN: The 'Birth Details' form is the gateway. Make it feel ceremonial. Use multi-step wizard with smooth transitions.",
+    "4. LANGUAGE: Ensure all text components can accept a 'lang' prop to switch between English and Hindi strings.",
+    "5. PDF GENERATION: Create a specific 'Print Layout' CSS that hides the sidebar/nav and uses the 'Parchment Mode' colors for the PDF output.",
+    "6. AI CHAT: Style the chat interface like a conversation with a sage. Use a distinct avatar and 'typing' animation that looks like stars twinkling."
+  ],
+  "universal_guidelines": [
+    "Avoid 'AI Slop': No generic gradients or centered text blocks.",
+    "Micro-Interactions: Buttons should glow on hover. Cards should lift.",
+    "Accessibility: Ensure high contrast for text, especially in the 'Cosmic Mode'.",
+    "Data-Testid: Add data-testid to all interactive elements."
+  ]
+}

@@ -1,0 +1,24 @@
+.App {
+  min-height: 100vh;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #FCD34D 0%, #D97706 100%);
+}
+
+.cosmic-bg {
+  background: linear-gradient(to bottom, #020617, #1E1B4B);
+}
